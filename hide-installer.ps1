@@ -32,7 +32,7 @@ if(!([Environment]::Is64BitOperatingSystem))
     Remove-Item HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$identifier
 }
 
-#If it is x64
+#If OS is x64
 else 
 {
     if (Test-Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$identifier)
